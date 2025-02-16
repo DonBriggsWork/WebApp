@@ -3,17 +3,19 @@
   <head>
     <base target="_top">
   </head>
-  <body>
-    
+  <body>    
     <h1>WebApp Tutorial</h1>
 
+    <label>Name: </label><input type="text" id="username">
     <button id="btn_Execute">Execute</button>
 
     <script>
       document.getElementById("btn_Execute").addEventListener("click", doStuff);
 
       function doStuff() {
-        google.script.run.btnExecuteClicked();
+        var uname = document.getElementById("username").value;
+        document.getElementById("username").value = "";
+        google.script.run.btnExecuteClicked(uname);
       }
     </script>
 

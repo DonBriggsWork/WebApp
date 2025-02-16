@@ -4,6 +4,7 @@ function doGet(e) {
   return HtmlService.createHtmlOutputFromFile("index");
 }
 
-function btnExecuteClicked() {
+function btnExecuteClicked(uname) {
   Logger.log("EXECUTE!!!");
+  Logger.log(uname);
 }
