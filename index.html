@@ -6,5 +6,16 @@
   <body>
     
     <h1>WebApp Tutorial</h1>
+
+    <button id="btn_Execute">Execute</button>
+
+    <script>
+      document.getElementById("btn_Execute").addEventListener("click", doStuff);
+
+      function doStuff() {
+        google.script.run.btnExecuteClicked();
+      }
+    </script>
+
   </body>
 </html>
