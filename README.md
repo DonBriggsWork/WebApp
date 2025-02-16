@@ -9,15 +9,15 @@ My ultimate intention is to create an application that can serve as GUI/Front en
 
 ## Part 1
 
-**Step 1**
+** Step 1 **
 
 Basic setup. Created a script with 'doGet' function and an HTML file for output. Had the script display the HTML. Played with passing and logging parameters in the Get request.
 
-**Step 2**
+** Step 2 **
 
 Playing with request parameters and logging.
 
-**Step 3**
+** Step 3 **
 
 Added an HTML button, and JavaScript to handle it. Still not very complex, but I was happy it worked. Moving on!
 
@@ -32,3 +32,14 @@ Added code to write the "username" value captured from the input box to a Spread
 ** Step 6 **
 
 Added code to write current date and time to spreadsheet, along with username. Very cool. Remember to manually run btnExecuteClicked function from editor to set permissions before trying to run WebApp, otherwise permissions error will be generated.
+
+## Part 2 - Template Partials & Passing Objects
+
+** Step 1 **
+
+Change input fields to two text fielods and a select box. Pass values to server as a single JSON object. Note that while the field data could be passed to the back end as a single JSON object, the JSON fields had to be passed to appendRow individually. (ie: ws.appendRow([userInfo.fName, userinfo.lName, etc]).
+
+** Step 2 **
+
+Refactor JavaScript and CSS into seperate files, index-js.html and index-css.html respectively. Initially the "include()" code line would print instead of executiung. I had to find a corrected version of the include() function online, and also update the doGet() function. This part was kinda a pain in the butt.
+

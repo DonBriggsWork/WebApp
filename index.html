@@ -2,22 +2,28 @@
 <html>
   <head>
     <base target="_top">
+    <?!= include("index-css"); ?>
   </head>
   <body>    
     <h1>WebApp Tutorial</h1>
 
-    <label>Name: </label><input type="text" id="username">
-    <button id="btn_Execute">Execute</button>
-
-    <script>
-      document.getElementById("btn_Execute").addEventListener("click", doStuff);
-
-      function doStuff() {
-        var uname = document.getElementById("username").value;
-        document.getElementById("username").value = "";
-        google.script.run.btnExecuteClicked(uname);
-      }
-    </script>
-
+    <div class="form-row">
+      <label>First: </label><input type="text" id="fName">
+    </div>
+    <div class="form-row">
+      <label>Last: </label><input type="text" id="lName">
+    </div class="form-row">
+    <div class="form-row">
+       <label>Weapon: </label> 
+      <select id="weapon">
+        <option>Phasers</option>
+        <option>Photon Torpedos</option>
+        <option>Disruptors</option>
+      </select>  
+    </div>
+    <div class="form-row">
+      <button id="btn_Execute">Execute</button>
+    </div>
+    <?!= include("index-js"); ?>
   </body>
 </html>
