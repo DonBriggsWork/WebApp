@@ -2,11 +2,7 @@
 <html>
   <head>
     <base target="_top">
-    <style>
-      .form-row {
-        margin-bottom: 15px;
-      }
-    </style>
+    <?!= include("index-css"); ?>
   </head>
   <body>    
     <h1>WebApp Tutorial</h1>
@@ -28,23 +24,6 @@
     <div class="form-row">
       <button id="btn_Execute">Execute</button>
     </div>
-
-    <script>
-      document.getElementById("btn_Execute").addEventListener("click", doStuff);
-
-      function doStuff() {
-        var userInfo = {};
-
-        userInfo.fName = document.getElementById("fName").value;
-        userInfo.lName = document.getElementById("lName").value;
-        userInfo.weapon = document.getElementById("weapon").value;
-        document.getElementById("fName").value = "";
-        document.getElementById("lName").value = "";
-        document.getElementById("weapon").value = "";
-
-        google.script.run.btnExecuteClicked(userInfo);
-      }
-    </script>
-
+    <?!= include("index-js"); ?>
   </body>
 </html>

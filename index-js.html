@@ -1,0 +1,16 @@
+    <script>
+      document.getElementById("btn_Execute").addEventListener("click", doStuff);
+
+      function doStuff() {
+        var userInfo = {};
+
+        userInfo.fName = document.getElementById("fName").value;
+        userInfo.lName = document.getElementById("lName").value;
+        userInfo.weapon = document.getElementById("weapon").value;
+        document.getElementById("fName").value = "";
+        document.getElementById("lName").value = "";
+        document.getElementById("weapon").value = "";
+
+        google.script.run.btnExecuteClicked(userInfo);
+      }
+    </script>
