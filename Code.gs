@@ -7,6 +7,16 @@ function doGet(e) {
           .setSandboxMode(HtmlService.SandboxMode.IFRAME);
 }
 
+/**
+ * btnExecuteClicked
+ * 
+ * This function runs to handle 'btnExecute' being clicked on the front end. It appends data passed to the form to a
+ * Google Spreadsheet. Note that the URL of the spreadsheet is hard-coded, and is local in the function, and the 
+ * spreadsheet must already exist in your  gDrive. These are all bad ideas, but they are used for simplicity.
+ * 
+ * @param JSON userInfo Contains data from input fields passed from the front end
+ * @return void
+ */
 function btnExecuteClicked(userInfo) {
 
   Logger.log(userInfo);
