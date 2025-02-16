@@ -31,4 +31,4 @@ Added code to write the "username" value captured from the input box to a Spread
 
 ** Step 6 **
 
-Added code to write current date and time to spreadsheet, along with username. Very cool.
+Added code to write current date and time to spreadsheet, along with username. Very cool. Remember to manually run btnExecuteClicked function from editor to set permissions before trying to run WebApp, otherwise permissions error will be generated.
