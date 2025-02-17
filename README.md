@@ -52,3 +52,7 @@ Add support for Materialize CSS framwork. Add CSS and JS to index.html. Material
 ### Step 2
 
 Replace generic HTML form controls with Materialize customized controls.
+
+## Part 4 - Load Data from Spreadsheet
+
+
