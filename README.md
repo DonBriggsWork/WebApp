@@ -47,7 +47,7 @@ Refactor JavaScript and CSS into seperate files, index-js.html and index-css.htm
 
 ### Step 1
 
-Add support for Materialize CSS framwork. Add CSS and JS to index.html.
+Add support for Materialize CSS framwork. Add CSS and JS to index.html. Materialize docs located at: https://materializecss.com.
 
 ### Step 2
 
