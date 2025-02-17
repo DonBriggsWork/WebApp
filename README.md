@@ -43,3 +43,8 @@ Change input fields to two text fielods and a select box. Pass values to server 
 
 Refactor JavaScript and CSS into seperate files, index-js.html and index-css.html respectively. Initially the "include()" code line would print instead of executiung. I had to find a corrected version of the include() function online, and also update the doGet() function. This part was kinda a pain in the butt.
 
+## Part 3 - Materialize CSS UI
+
+** Step 1 **
+
+Add support for Materialize CSS framwork. Add CSS and JS to index.html.
