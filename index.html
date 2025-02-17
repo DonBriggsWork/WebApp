@@ -8,25 +8,38 @@
     <?!= include("index-css"); ?>
   </head>
   <body>    
-    <h1>WebApp Tutorial</h1>
 
-    <div class="form-row">
-      <label>First: </label><input type="text" id="fName">
-    </div>
-    <div class="form-row">
-      <label>Last: </label><input type="text" id="lName">
-    </div class="form-row">
-    <div class="form-row">
-       <label>Weapon: </label> 
-      <select id="weapon">
-        <option>Phasers</option>
-        <option>Photon Torpedos</option>
-        <option>Disruptors</option>
-      </select>  
-    </div>
-    <div class="form-row">
-      <button id="btn_Execute">Execute</button>
-    </div>
+    <div class="container">
+      <h1>WebApp Tutorial</h1>
+      <div class="row">
+          <div class="input-field col s6">
+            <input id="fName" type="text" class="validate">
+            <label for="fName">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="lName" type="text" class="validate">
+            <label for="lName">Last Name</label>
+          </div>
+      </div> <!-- CLOSE ROW -->
+
+      <div class="row">
+        <div class="input-field col s6">
+          <select id="weapon">
+            <option value="" disabled selected>Weapon</option>
+            <option>Phasers</option>
+            <option>Photon Torpedos</option>
+            <option>Disruptors</option>
+          </select>
+          <label for="weapon">Weapon</label>
+        </div>
+      </div> <!-- CLOSE FORM-ROW -->
+
+      <div class="row">
+        <button id="btn_Execute" class="waves-effect waves-light btn-small">Execute</button>
+      </div>
+
+    </div> <!-- CLOSE CONTAINER -->
+ 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <?!= include("index-js"); ?>
   </body>
