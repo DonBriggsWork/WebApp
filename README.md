@@ -45,6 +45,10 @@ Refactor JavaScript and CSS into seperate files, index-js.html and index-css.htm
 
 ## Part 3 - Materialize CSS UI
 
-** Step 1
+### Step 1
 
 Add support for Materialize CSS framwork. Add CSS and JS to index.html.
+
+### Step 2
+
+Replace generic HTML form controls with Materialize customized controls.
